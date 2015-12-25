@@ -1,0 +1,32 @@
+<template>
+  <h1>Wireless lines</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>CARRIER</th>
+        <th>MDN</th>
+        <th>STATUS</th>
+        <th>ACTIVATION</th>
+        <th>SIM</th>
+        <th>IMEI</th>
+        <th>PLAN ID</th>
+        <th>NEXT BILL DATE</th>
+        <th>DATA USAGE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="line of wireless.lines">
+        <td>${line.carrier.name}</td>
+        <td>${line.mdn}</td>
+        <td>${line.status}</td>
+        <td>${line.activation_date}</td>
+        <td>${line.esn}</td>
+        <td>${line.imei}</td>
+        <td>${line.plan_id}</td>
+        <td>${line.next_bill_date}</td>
+        <td>${line.data_used}</td>
+      </tr>
+    </tbody>
+  </table>
+</template>

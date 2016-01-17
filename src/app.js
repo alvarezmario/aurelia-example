@@ -43,7 +43,6 @@ export class App {
     config.map([
       { route: 'login', name: 'login', moduleId: './views/auth/login', title: 'Login', auth: false },
       { route: 'front', name: 'front-module', moduleId: './front/module', title: 'Front', auth: true },
-      { route: 'admin', name: 'admin-module', moduleId: './admin/module', title: 'Admin', auth: true },
       { route: '', redirect: 'front' }
     ]);
 

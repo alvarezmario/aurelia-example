@@ -1,0 +1,15 @@
+<template>
+  <h1>Welcome</h1>
+
+  <div class="form-group">
+    <label>Choose a Slider</label>
+    <select class="form-control" ref="name" change.delegate="switchSlider($event)">
+      <option repeat.for="slider of sliderOptions">${slider}</option>
+    </select>
+  </div>
+
+  <br><br>
+  <div class="well">
+    <compose view="./${overridableSlider}/slider.html"></compose>
+  </div>
+</template>

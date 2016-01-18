@@ -1,0 +1,39 @@
+<template>
+  <h1>Products</h1>
+  <ul class="list-unstyled products">
+    <li repeat.for="product of products">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="#" class="thumbnail">
+            <img src.bind="product.image_raw_uri" />
+          </a>
+        </div>
+        <div class="col-md-7">
+          <h4>${product.name}</h4>
+          <div if.bind="product.mpn">
+            MPN: ${product.mpn}
+          </div>
+          <br>
+          <a route-href="route: products-view; params.bind: { id: product.id }" class="btn btn-default">
+            View more
+          </a>
+        </div>
+        <div class="col-md-3">
+          <div class="well">
+            <h5>Price and Availability</h5>
+            <div class="input-group">
+              <input type="number" class="form-control" placeholder="Qty">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Add to Cart</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="well">
+        <h3>${product.name}</h3>
+
+      </div> -->
+    </li>
+  </ul>
+</template>

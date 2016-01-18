@@ -12,7 +12,6 @@ export class AccountWireless {
       .then(response => response.json())
       .then(response => {
         this.wireless = response;
-        console.log(this.wireless);
       })
       .catch(() => {});
   }

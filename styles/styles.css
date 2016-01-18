@@ -173,3 +173,7 @@ div.au-stagger {
     opacity: 1;
   }
 }
+
+.products li {
+  margin-bottom: 20px;
+}

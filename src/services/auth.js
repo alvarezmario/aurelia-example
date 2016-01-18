@@ -3,7 +3,6 @@ import {Router} from 'aurelia-router';
 import {HttpClient, json} from 'aurelia-fetch-client';
 
 const AUTH_TOKEN_NAME = 'ml-auth-token';
-const CLIENT_ID = 'MV8ydDRycXFxeHI2bzA4MDBnOGtnc3NnZ3Mwb3dzd2tra29zMGtrd28wc3cwbzhva3c4Yzo1eXVjZ2NlbmJuazBnYzBrMDBrc2dnY3djY3djNDBzZzBnb2Nzc2Njd2dnODB3dzRrYw';
 
 @inject(HttpClient, Router)
 export default class AuthService {
